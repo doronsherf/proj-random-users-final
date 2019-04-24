@@ -1,0 +1,216 @@
+/* --------------------------------------------------------
+Style Sheet 
+project: Generate Random Users
+
+version: 1.0
+last modified: 
+author: Doron 
+email: sherfdo@gmail.com
+website: http://
+----------------------------------------------------------*/
+
+/*  <body class="container" >*/
+body {
+    font-family: arial; 
+    text-align: center;
+}
+
+#header  {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: 5px;
+    background-color:#5d0f70; 
+    color:white; 
+    max-height: 32px;
+    align-self: center;
+    align-content: center;
+    align-items: center; 
+
+        position: -webkit-sticky; /* sticky header */
+        position: sticky;
+        top: 0;
+        z-index: +1;
+
+  }
+  #main_btns {
+    display: flexbox;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    margin: 5px;
+    background-color: rgb(16, 19, 65); 
+    max-height: 10px; 
+  }
+  
+  #main_btns button {
+    width: 120px;
+    height: 34px;
+    margin: 1px;
+    padding:0px ; 
+  }
+
+/*------------------------------------------------------*/
+
+#display_area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    position: relative;
+    top: 50px;
+
+}
+
+button { 
+    color: white;
+    
+}
+#rplac1 {
+    background: grey;
+    
+}
+
+#rplac1:hover {
+    background: rgb(80, 80, 80);
+    cursor: no-drop; 
+
+}
+#rplac1_chck_btn {
+    cursor:default;
+    }
+
+
+.well{
+    background:rgb(100, 150, 200); 
+} 
+
+/* card styles     */
+#card { 
+    position: relative;  
+    top: 4px;
+    left: 4px; 
+    width: 134px; 
+    height: 270px;
+    word-break: break-all; 
+    margin: 2px;
+    padding:2px ;
+    text-align: left;
+    color: black;
+}
+
+.card_edit { 
+    position: relative;  
+    top: 4px;
+    left:0; 
+    word-break: break-all; 
+    margin: 2px;
+    padding:2px ;
+    text-align: left;
+    color: black;
+    border: 5px solid purple;
+}
+
+/* card picture style */
+#c_pic {
+    position: absolute;  
+    top: 2px;
+    left: 2px;
+}
+/* card name style */
+#c_name {
+    position: absolute;  
+    top: 120px;
+    left: 2px;
+    font-family: Arial Narrow;
+    font-size: 18px;
+    font-weight: bold ;
+    display: inline; 
+}
+
+#name_edit {  
+    position: absolute;  
+    top: 134px;
+    left: 2px;
+    font-size: 14px;
+    font-weight: bold ;
+    display: none; 
+    width: 180px;
+}
+   /* card gender style */
+#c_gender { 
+    position: absolute;  
+    top: 170px;
+    left: 2px;
+    font-size: 12px;
+}
+/* card age style */
+#c_age { 
+    position: absolute;  
+    top: 185px;
+    left: 2px;
+    font-size: 12px;
+} 
+   /* card mail style */
+#c_mail {
+    position: absolute;  
+    top: 200px;
+    left: 2px;
+    font-size: 12px;
+    display: inline; 
+}
+#mail_edit { 
+    position: absolute;  
+    top: 210px;
+    left: 2px;
+    font-size: 12px;
+    display: inline; 
+    width: 180px;
+} 
+
+/* The Delete button style */
+#delet_btn {         
+    position: absolute;    
+    bottom: 1px;
+    left: 0;
+    width: 50%;
+    height: 25px;
+    background-color: red;
+}
+
+/* The "edit" button style */
+#edit_btn { 
+    position: absolute;    
+    bottom: 1px;
+    right: 0;
+    width: 50%;
+    height: 25px;
+    background-color: green;
+    border-color: green
+}
+
+/* card full txt string style */
+#c_full_txt {
+    display: none; 
+}
+
+/* Check box styling */
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;   
+}
+
